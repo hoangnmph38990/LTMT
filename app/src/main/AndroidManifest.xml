@@ -13,6 +13,12 @@
         android:theme="@style/Theme.Hoangnmph38990_MD18308_ass"
         tools:targetApi="31">
         <activity
+            android:name=".Man_hinh_chinh"
+            android:exported="false" />
+        <activity
+            android:name=".Dang_nhap"
+            android:exported="false" />
+        <activity
             android:name=".MainActivity"
             android:exported="true">
             <intent-filter>

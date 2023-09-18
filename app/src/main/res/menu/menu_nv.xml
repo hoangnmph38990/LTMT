@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+
+        <item android:id="@+id/Ql_phieumuon"
+            android:title="Quản Lý Phiếu Mượn"
+            android:icon="@drawable/baseline_home_24"
+            />
+        <item android:id="@+id/Ql_loaisach"
+            android:title="Quản Lý Loại Sách"
+            android:icon="@drawable/baseline_auto_awesome_motion_24"
+            />
+        <item android:id="@+id/Ql_sach"
+            android:title="Quản Lý Sách"
+            android:icon="@drawable/baseline_library_books_24"
+            />
+        <item android:id="@+id/Ql_thanhvien"
+            android:title="Quản Lý Thành Viên"
+            android:icon="@drawable/sharp_groups_24"
+            />
+
+        <item android:title="Thống Kê">
+            <menu>
+
+                <item android:id="@+id/Tk_topsach"
+                    android:title="Top 10 Sách Mượn Nhiều Nhất"
+                    android:icon="@drawable/baseline_vertical_align_top_24"/>
+                <item android:id="@+id/Tk_doanhthu"
+                    android:title="Doanh Thu"
+                    android:icon="@drawable/baseline_monetization_on_24" />
+
+            </menu>
+        </item>
+
+        <item android:title="Người Dùng">
+            <menu>
+
+                <item android:id="@+id/Nd_add_nguoidung"
+                    android:title="Thêm Người Dùng"
+                    android:icon="@drawable/baseline_person_add_24"/>
+                <item android:id="@+id/Nd_doimatkhau"
+                    android:title="Đổi Mật Khẩu"
+                    android:icon="@drawable/baseline_vpn_key_24"/>
+                <item android:id="@+id/Nd_exit"
+                    android:title="Đăng Xuất"
+                    android:icon="@drawable/baseline_exit_to_app_24"
+                    />
+
+            </menu>
+        </item>
+    </group>
+
+</menu>
