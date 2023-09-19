@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="10dp"
+    android:padding="10dp"
+    android:background="@drawable/khung_lv_rcv">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        >
+        <TextView
+            android:id="@+id/tv_maphieu_phieumuon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Mã Phiếu : "
+            />
+        <TextView
+            android:id="@+id/tv_thanhvien_phieumuon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Thành Viên  : "
+            />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            >
+            <TextView
+                android:id="@+id/tv_tensach_phieumuon"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Tên Sách : "
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Chưa Trả Sách"
+                android:textColor="#DF0202"
+                android:textStyle="bold"
+                android:layout_marginLeft="90dp"
+                />
+            <Button
+                android:id="@+id/btn_delete_phieumuon"
+                android:layout_width="50dp"
+                android:layout_marginLeft="50dp"
+                android:layout_height="wrap_content"
+                android:drawableStart="@drawable/baseline_delete_forever_24"
+                android:padding="13dp"
+                android:background="@drawable/khung_btn"
+                />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            >
+            <TextView
+                android:id="@+id/tv_tienthue_phieumuon"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Tiền Thuê : "
+                />
+            <TextView
+                android:id="@+id/tv_ngaythue_phieumuon"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Ngày Thuê : "
+                android:layout_marginLeft="90dp"
+                />
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+</LinearLayout>

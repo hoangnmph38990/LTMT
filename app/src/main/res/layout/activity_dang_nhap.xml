@@ -5,9 +5,70 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".Dang_nhap"
-    android:layout_gravity="center_horizontal"
+    android:gravity="center_horizontal"
     android:orientation="vertical">
 
+    <ImageView
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:src="@drawable/lamviec1"
+        />
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp">
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/ed_username_dn"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@drawable/khung_edt"
+            android:hint="Nhập Username"
+            android:padding="10dp"
+            />
+    </com.google.android.material.textfield.TextInputLayout>
 
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        app:passwordToggleEnabled="true">
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/ed_password_dn"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@drawable/khung_edt"
+            android:hint="Nhập Password"
+            android:padding="10dp"
+            />
+    </com.google.android.material.textfield.TextInputLayout>
 
+    <CheckBox
+        android:id="@+id/chk_nhomatkhau_dn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:text="Ghi Nhớ Mật Khẩu"
+        android:layout_gravity="start"
+        />
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="15dp"
+        >
+        <Button
+            android:id="@+id/btn_login_dn"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:background="@drawable/khung_btn"
+            android:text="Login"
+            />
+        <Button
+            android:id="@+id/btn_cancel_dn"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:background="@drawable/khung_btn"
+            android:text="Cancel"
+            android:layout_marginLeft="30dp"
+            />
+    </LinearLayout>
 </LinearLayout>

@@ -17,7 +17,6 @@ import com.example.hoangnmph38990_md18308_ass.Fragment.QL_loaisach;
 import com.example.hoangnmph38990_md18308_ass.Fragment.QL_phieumuon;
 import com.example.hoangnmph38990_md18308_ass.Fragment.QL_sach;
 import com.example.hoangnmph38990_md18308_ass.Fragment.QL_thanhvien;
-import com.example.hoangnmph38990_md18308_ass.Fragment_Nguoidung.ND_Exit;
 import com.example.hoangnmph38990_md18308_ass.Fragment_Nguoidung.ND_doimatkhau;
 import com.example.hoangnmph38990_md18308_ass.Fragment_Nguoidung.ND_themnguoidung;
 import com.example.hoangnmph38990_md18308_ass.Fragment_Thongke.TK_doanhthu;
@@ -40,7 +39,6 @@ public class Man_hinh_chinh extends AppCompatActivity {
     TK_doanhthu tk_doanhthu;
     ND_themnguoidung nd_themnguoidung;
     ND_doimatkhau nd_doimatkhau;
-    ND_Exit nd_exit;
     //
 
 
@@ -80,7 +78,6 @@ public class Man_hinh_chinh extends AppCompatActivity {
 
         nd_themnguoidung = new ND_themnguoidung();
         nd_doimatkhau = new ND_doimatkhau();
-        nd_exit = new ND_Exit();
 
         //
         getSupportFragmentManager().beginTransaction().add(R.id.Fragment_container, ql_phieumuon);
@@ -157,16 +154,16 @@ public class Man_hinh_chinh extends AppCompatActivity {
         AlertDialog.Builder builder = new AlertDialog.Builder(this);
         builder.setTitle("Thông báo");
         builder.setIcon(android.R.drawable.ic_delete);
-        builder.setMessage("Bạn có đồng ý xóa dữ liệu");
+        builder.setMessage("Thoát Phần Mềm ?");
 
-        builder.setPositiveButton("Đồng ý xóa", new DialogInterface.OnClickListener() {
+        builder.setPositiveButton("Yes", new DialogInterface.OnClickListener() {
             @Override
             public void onClick(DialogInterface dialogInterface, int i) {
-                Toast.makeText(getApplication(), "Viết lệnh xóa vào hàm này....onClick ", Toast.LENGTH_SHORT).show();
+                Toast.makeText(getApplication(), "Thoát Thành Công", Toast.LENGTH_SHORT).show();
                 dialogInterface.dismiss();
             }
         });
-        builder.setNegativeButton("Không xóa", new DialogInterface.OnClickListener() {
+        builder.setNegativeButton("No", new DialogInterface.OnClickListener() {
             @Override
             public void onClick(DialogInterface dialogInterface, int i) {
                 // không làm gì, tất dialog đi

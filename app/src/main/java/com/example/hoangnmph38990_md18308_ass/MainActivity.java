@@ -13,12 +13,12 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        //Màn hình chờ 2s
+        //Màn hình chờ 3s
         Handler h = new Handler();
         h.postDelayed(new Runnable() {
             @Override
             public void run() {
-                startActivity(new Intent(MainActivity.this, Man_hinh_chinh.class));
+                startActivity(new Intent(MainActivity.this, Dang_nhap.class));
             }
         },3000);
     }
