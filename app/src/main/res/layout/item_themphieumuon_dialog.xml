@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center_horizontal">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Thêm Phiếu Mượn"
+        android:textSize="30dp"
+        android:layout_margin="20dp"
+        android:textStyle="bold"
+        />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp">
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/ed_hoten_pm"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@drawable/khung_edt"
+            android:hint="Nhập Họ Tên Thành Viên"
+            android:padding="10dp"
+            />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp">
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/ed_tensach_pm"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@drawable/khung_edt"
+            android:hint="Nhập Tên Sách"
+            android:padding="10dp"
+            />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp">
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/ed_tienthue_pm"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@drawable/khung_edt"
+            android:hint="Nhập Tiền Thuê"
+            android:padding="10dp"
+            />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp">
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/ed_ngaythue_pm"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@drawable/khung_edt"
+            android:hint="Chọn Ngày Thuê"
+            android:padding="10dp"
+            />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="15dp"
+        >
+        <Button
+            android:id="@+id/btn_save_pm"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:background="@drawable/khung_btn"
+            android:text="save"
+            />
+        <Button
+            android:id="@+id/btn_cancel_pm"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:background="@drawable/khung_btn"
+            android:text="Cancel"
+            android:layout_marginLeft="30dp"
+            />
+    </LinearLayout>
+
+</LinearLayout>

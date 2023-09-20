@@ -17,7 +17,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:textSize="30dp"
-        android:text="DỰ ÁN MẪU 1"
+        android:text="DỰ ÁN MẪU"
         android:textColor="#FF0000"
         android:textStyle="bold"
         />

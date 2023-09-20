@@ -1,24 +1,32 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    android:orientation="horizontal"
+    android:background="@drawable/khung_lv_rcv"
     android:layout_margin="10dp"
     android:padding="10dp"
     >
 
     <TextView
-        android:id="@+id/tv_maloai_ls"
+        android:id="@+id/tv_mathanhvien_tv"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Mã loại : "/>
+        android:text="Mã Thành Viên : "
+        />
 
     <TextView
-        android:id="@+id/tv_tenloai_ls"
+        android:id="@+id/tv_tenthanhvien_tv"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Tên Loại : "
-        android:layout_marginLeft="120dp"
+        android:text="Họ Và tên : "
+        />
+
+    <TextView
+        android:id="@+id/tv_namsinh_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Năm Sinh :"
         />
 
 </LinearLayout>

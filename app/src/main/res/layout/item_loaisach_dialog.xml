@@ -1,61 +1,66 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    tools:context=".Fragment_Thongke.TK_doanhthu"
-    android:orientation="vertical"
     android:gravity="center_horizontal">
 
-    <com.google.android.material.textfield.TextInputLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_margin="10dp"
-        app:passwordToggleEnabled="true">
-        <com.google.android.material.textfield.TextInputEditText
-            android:id="@+id/ed_ngaybatdau_tk"
-            android:layout_width="match_parent"
-            android:layout_height="50dp"
-            android:background="@drawable/khung_edt"
-            android:hint="Ngày Bắt Đầu"
-            android:padding="10dp"
-            />
-    </com.google.android.material.textfield.TextInputLayout>
-
-    <com.google.android.material.textfield.TextInputLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_margin="10dp"
-        app:passwordToggleEnabled="true">
-        <com.google.android.material.textfield.TextInputEditText
-            android:id="@+id/ed_ngayketthuc_tk"
-            android:layout_width="match_parent"
-            android:layout_height="50dp"
-            android:background="@drawable/khung_edt"
-            android:hint="Ngày Kết Thúc"
-            android:padding="10dp"
-            />
-    </com.google.android.material.textfield.TextInputLayout>
-
-    <Button
-        android:id="@+id/btn_doanhthu_tk"
-        android:layout_width="wrap_content"
-        android:layout_height="50dp"
-        android:background="@drawable/khung_btn"
-        android:layout_marginTop="20dp"
-        android:text="Doanh Thu"
-        android:padding="10dp"
-        android:drawableStart="@drawable/baseline_monetization_on_24"
-        />
     <TextView
-        android:id="@+id/tv_doanhthu_tk"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_gravity="start"
+        android:text="Thêm Loại Sách"
+        android:textSize="30dp"
         android:layout_margin="20dp"
-        android:textSize="20sp"
-        android:text="Doanh Thu : "
         />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp">
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/ed_masach"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@drawable/khung_edt"
+            android:hint="Nhập Mã"
+            android:padding="10dp"
+            />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp">
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/ed_loaisach"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@drawable/khung_edt"
+            android:hint="Nhập Loại Sách"
+            android:padding="10dp"
+            />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="15dp"
+        >
+        <Button
+            android:id="@+id/btn_save"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:background="@drawable/khung_btn"
+            android:text="save"
+            />
+        <Button
+            android:id="@+id/btn_cancel"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:background="@drawable/khung_btn"
+            android:text="Cancel"
+            android:layout_marginLeft="30dp"
+            />
+    </LinearLayout>
 
 </LinearLayout>
