@@ -14,10 +14,11 @@ public class DbHelper extends SQLiteOpenHelper {
     static final String CREATE_TABLE_THU_THU = "CREATE TABLE ThuThu (" +
             "    maTT    TEXT PRIMARY KEY," +
             "    hoTen   TEXT NOT NULL," +
-            "    matKhau TEXT NOT NULL);";
+            "    matKhau TEXT NOT NULL)";
+    static final String sql_thuthu = "INSERT INTO ThuThu VALUES('1','hoang','1234')";
     //
     static final String CREATE_TABLE_THANH_VIEN = "CREATE TABLE ThanhVien (" +
-            "    maTV    TEXT PRIMARY KEY," +
+            "    maTV    INTEGER PRIMARY KEY," +
             "    hoTen   TEXT NOT NULL," +
             "    namSinh TEXT NOT NULL)";
     //
@@ -39,7 +40,7 @@ public class DbHelper extends SQLiteOpenHelper {
             "    tienThue INTEGER  NOT NULL," +
             "    ngay     DATE     NOT NULL," +
             "    traSach  INTERGER NOT NULL)";
-    public DbHelper(@Nullable Context context, @Nullable String name, @Nullable SQLiteDatabase.CursorFactory factory, int version) {
+    public DbHelper(@Nullable Context context) {
         super(context, DB_NAME, null, 1);
     }
 
@@ -47,6 +48,7 @@ public class DbHelper extends SQLiteOpenHelper {
     public void onCreate(SQLiteDatabase db) {
         //Tao database o day
         db.execSQL(CREATE_TABLE_THU_THU);
+        db.execSQL(sql_thuthu);
 
         db.execSQL(CREATE_TABLE_THANH_VIEN);
 
